@@ -1,0 +1,98 @@
+.roadmap {
+    margin-top: 1em;
+    h2 {
+        text-align: center;
+    }
+    h3 {
+        font-size: medium;
+        margin-top: 1em;
+        margin-right: 0.5em;
+        margin-left: 1em;
+    }
+    p {
+        font-size: x-small;
+        margin-top: 1.25em;
+    }
+    .box {
+        display: flex;
+        margin-bottom: 1em;
+    }
+    .design1 {
+        background: rgb(131,58,180);
+        background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); 
+    }
+    .design2 {
+        background: rgb(34,193,195);
+        background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);  
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .roadmap {
+        h3 {
+            margin-top: 1.20em;
+            margin-right: 0.5em;
+            margin-left: 1em;
+            font-size: larger;
+        }
+        p {
+            font-size: small;
+            margin-inline: 0.25em;
+        }
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    .roadmap {
+        h2 {
+            font-size: 225%;
+        }
+        h3 {
+            font-size: large;
+            margin-bottom: 0em;
+            text-align: center;
+        }
+        p {
+            font-size: medium;
+            margin-inline: 0.25em;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-basis: 100%;
+            flex: 1;
+        }
+        .box {
+            display: flex;
+            flex-direction: column;
+            height: 40vh;
+            width: 100%;
+        }
+        .design1 {
+            background: rgb(131,58,180);
+            background: linear-gradient( rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); 
+        }
+        .design2 {
+            background: rgb(34,193,195);
+            background: linear-gradient( rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);  
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .roadmap {
+        h2 {
+            font-size: 400%;
+        }
+        h3 {
+            font-size: 300%;
+        }
+        p {
+            font-size: x-large;
+        }
+        .box {
+            height: 75vh;
+        }
+    }
+}

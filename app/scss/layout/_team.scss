@@ -1,0 +1,189 @@
+@use "../util";
+
+.team {
+    background: rgb(18,18,18);
+    background: linear-gradient(rgba(18,18,18,1) 10%, rgba(0,0,0,1) 100%); 
+    h2 {
+        margin-top: 3em;
+    }
+    h2, h3, p {
+        text-align: center;
+    }
+    .hash {
+        margin-top: 1em;
+        background: rgb(153,0,255);
+        background: linear-gradient(90deg, rgba(153,0,255,1) 0%, rgba(255,192,203,1) 50%, rgba(207,210,72,1) 100%); 
+        padding: 0.5em;
+        text-align: center;
+        a {
+            color: white;
+        }
+    }
+    .third {
+        margin-top: 1em;
+        background: rgb(63,130,251);
+        background: linear-gradient(90deg, rgba(63,130,251,1) 0%, rgba(216,70,252,1) 100%);
+        padding: 0.5em;
+        text-align: center;
+        a {
+            color: white;
+        }
+    }
+    p {
+        margin-bottom: 0em;
+    }
+    img {
+        display: block;
+        margin-inline: auto;
+        width: 50%;
+    }
+    .sub {
+        font-family: util.$text;
+        margin-bottom: 1em;
+    }
+    .divider {
+        width: 100%;
+        margin-top: -2em;
+        position: absolute;
+    }
+}
+
+@media only screen and (min-width: 410px) {
+    .team {
+        .divider {
+            width: 100%;
+            margin-top: -2.5em;
+            position: absolute;
+        }
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .team {
+        h2 {
+            font-size: xx-large;
+        }
+        .divider {
+            width: 100%;
+            margin-top: -3em;
+            position: absolute;
+            
+        }
+        .row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+          }
+          
+          .column {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 100%;
+            flex: 1;
+          }
+          p {
+            margin-inline: 1.5em;
+          }
+    }
+}
+
+@media only screen and (min-width: 650px) {
+    .team {
+        h2 {
+            font-size: 300%;
+        }
+        .divider {
+            width: 100%;
+            margin-top: -3.5em;
+            position: absolute;
+        }
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .team {
+        h2 {
+            font-size: 300%;
+        }
+        .divider {
+            width: 100%;
+            margin-top: -4.25em;
+            position: absolute;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .team {
+        h2 {
+            font-size: 300%;
+        }
+        h3 {
+            font-size: 250%;
+        }
+        .divider {
+            width: 100%;
+            margin-top: -5em;
+            position: absolute;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .team {
+        h2 {
+            font-size: 400%;
+        }
+        h3 {
+            font-size: 300%;
+        }
+        p {
+            font-size: 250%;
+            margin-inline: 3em;
+        }
+        .divider {
+            width: 100%;
+            margin-top: -6.5em;
+            position: absolute;
+        }
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .team {
+        h2 {
+            font-size: 500%;
+        }
+        h3 {
+            font-size: 250%;
+        }
+        p {
+            margin-inline: 4em;
+        }
+        .divider {
+            width: 100%;
+            margin-top: -10em;
+            position: absolute;
+        }
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .team {
+        h2 {
+            font-size: 500%;
+        }
+        h3 {
+            font-size: 250%;
+        }
+        p {
+            margin-inline: 5em;
+        }
+        .divider {
+            width: 100%;
+            margin-top: -10em;
+            position: absolute;
+        }
+    }
+}

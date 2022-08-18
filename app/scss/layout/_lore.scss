@@ -1,0 +1,103 @@
+.lore {
+    background-image: url(/app/img/bgline2.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6em;
+    img {
+        width: 50%;
+        display: block;
+        margin-inline: auto;
+        margin-bottom: 2em;
+    }
+    h2 {
+        background-image: linear-gradient(to right, rgba(black, 0) 25%, #1d25e9, #1eb2e9, #92d0e7);
+        margin-left: 0.25em;
+    }
+    p {
+        font-size: x-small;
+        margin: 1em 1em 3em 1em;
+    }
+    .txt-center {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .lore {
+        h2 {
+            margin-left: 1.5em;
+        }
+        p {
+            font-size: small;
+            margin-inline: 2em;
+        }
+        img {
+            width: 30%;
+        }
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    .lore {
+        h2 {
+            font-size: xx-large;
+        }
+        p {
+            font-size: medium;
+        }
+        .textlore {
+            display: flex;
+            flex-direction: row-reverse;
+            img {
+                width: 10em;
+                height: 10em;
+                margin-top: 5em;
+                margin-inline: 2em;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .lore {
+        h2 {
+            font-size: 400%;
+        }
+        p {
+            font-size: xx-large;
+        }
+        .textlore {
+            display: flex;
+            flex-direction: row-reverse;
+            img {
+                width: 25em;
+                height: 25em;
+                margin-top: 8em;
+                margin-inline: 2em;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .lore {
+        h2 {
+            font-size: 500%;
+        }
+        p {
+            font-size: xx-large;
+            margin-inline: 3em;
+        }
+        .textlore {
+            display: flex;
+            flex-direction: row-reverse;
+            img {
+                width: 25em;
+                height: 25em;
+                margin-top: 3em;
+                margin-inline: 5em;
+            }
+        }
+    }
+}

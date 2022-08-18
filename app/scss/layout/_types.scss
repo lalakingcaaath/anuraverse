@@ -1,0 +1,59 @@
+.types {
+    background-image: url(/app/img/bgline1.png);
+    background-size: contain;
+    margin-top: 6em;
+    h2 {
+        background-image: linear-gradient(to right, rgba(black, 0) 25%, #1d25e9, #1eb2e9, #92d0e7);
+        margin-left: 0.25em;
+    }
+    p {
+        font-size: x-small;
+        margin: 1em;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .types {
+        h2 {
+            margin-left: 1.5em;
+        }
+        p {
+            margin-inline: 2em;
+            font-size: small;
+        }
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    .types {
+        h2 {
+            font-size: xx-large;
+        }
+        p {
+            font-size: medium;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .types {
+        h2 {
+            font-size: 400%;
+        }
+        p {
+            font-size: xx-large;
+        }
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .types {
+        h2 {
+            font-size: 500%;
+        }
+        p {
+            font-size: xx-large;
+            margin-inline: 3em;
+        }
+    }
+}

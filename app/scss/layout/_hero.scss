@@ -1,0 +1,84 @@
+@use "../util";
+
+.hero {
+    h1 {
+        position: absolute;
+        top: 3.5em;
+        left: 0.75em;
+    }
+    p {
+        position: absolute;
+        top: 14em;
+        left: 2em;
+        font-family: util.$text;
+        font-size: x-small;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .hero {
+        p {
+            position: absolute;
+            top: 12em;
+            left: 1.5em;
+            font-size: small;
+        }
+    }
+}
+
+@media only screen and (min-width: 650px) {
+    .hero {
+        p {
+            position: absolute;
+            top: 10em;
+            left: 1.25em;
+            font-size: medium;
+        }
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    .hero {
+        h1 {
+            font-size: xx-large;
+        }
+        p {
+            position: absolute;
+            top: 12em;
+            left: 1.25em;
+            font-size: large;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .hero {
+        h1 {
+            font-size: 450%;
+            top: 2em;
+            left: 0.50em;
+        }
+        p {
+            position: absolute;
+            top: 10em;
+            left: 1.25em;
+            font-size: xx-large;
+        }
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .hero {
+        h1 {
+            font-size: 500%;
+            top: 2.5em;
+            left: 0.50em;
+        }
+        p {
+            position: absolute;
+            top: 12.5em;
+            left: 1.25em;
+            font-size: xx-large;
+        }
+    }
+}

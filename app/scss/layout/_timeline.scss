@@ -1,0 +1,36 @@
+.timeline {
+    h2 {
+        text-align: right;
+        background-image: linear-gradient(to left, rgba(black, 0) 25%, #e9d027, #e98827 , #ea201f );
+        margin-right: 0.25em;
+        margin-bottom: 0;
+    }
+    p {
+        font-size: x-small;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    .timeline {
+        h2 {
+            margin-right: 1.5em;
+            font-size: xx-large;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .timeline {
+        h2 {
+            font-size: 400%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .timeline {
+        h2 {
+            font-size: 500%;
+        }
+    }
+}
