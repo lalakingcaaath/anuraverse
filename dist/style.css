@@ -305,7 +305,7 @@ a, a:visited, a:active {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  margin-top: 6em;
+  margin-top: 0.25em;
 }
 .lore img {
   width: 50%;
@@ -947,6 +947,11 @@ a, a:visited, a:active {
     padding-bottom: 1.5em;
   }
 }
+.anurapedia {
+  background-image: url(/app/img/bgline1.png);
+  background-size: contain;
+  padding-bottom: 1.75em;
+}
 .anurapedia h2 {
   text-align: right;
   background-image: linear-gradient(to left, rgba(2, 0, 36, 0) 25%, #99082d, #ff0000);
@@ -957,6 +962,31 @@ a, a:visited, a:active {
   text-align: center;
   margin-top: 2.5em;
 }
+.anurapedia .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.anurapedia .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+.anurapedia .box {
+  width: 50%;
+  margin-inline: auto;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+  transition: 1s;
+}
+.anurapedia .box :hover {
+  transform: scale(1.3);
+  z-index: 2;
+}
+.anurapedia .top {
+  margin-top: 3.5em;
+}
 
 @media screen and (min-width: 500px) {
   .anurapedia h2 {
@@ -964,26 +994,80 @@ a, a:visited, a:active {
   }
 }
 @media screen and (min-width: 720px) {
+  .anurapedia {
+    padding-bottom: 10em;
+  }
   .anurapedia h2 {
     font-size: xx-large;
   }
   .anurapedia h3 {
     font-size: larger;
   }
+  .anurapedia .box {
+    width: 150px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-inline: auto;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+    transition: 1s;
+  }
+  .anurapedia .box :hover {
+    transform: scale(1.3);
+    z-index: 2;
+  }
+  .anurapedia .top {
+    margin-top: 6.5em;
+  }
 }
 @media screen and (min-width: 1200px) {
+  .anurapedia {
+    padding-bottom: 10em;
+  }
   .anurapedia h2 {
     font-size: 400%;
   }
   .anurapedia h3 {
     font-size: x-large;
   }
+  .anurapedia .box {
+    width: 250px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-inline: auto;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+    transition: 1s;
+  }
+  .anurapedia .box :hover {
+    transform: scale(1.3);
+    z-index: 2;
+  }
+  .anurapedia .top {
+    margin-top: 6.5em;
+  }
 }
 @media screen and (min-width: 1600px) {
+  .anurapedia {
+    padding-bottom: 10em;
+  }
   .anurapedia h2 {
     font-size: 500%;
   }
   .anurapedia h3 {
     font-size: 300%;
+  }
+  .anurapedia .top {
+    margin-top: 6.5em;
+  }
+  .anurapedia .box {
+    width: 250px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-inline: auto;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+    transition: 1s;
+  }
+  .anurapedia .box :hover {
+    transform: scale(1.3);
+    z-index: 2;
   }
 }/*# sourceMappingURL=style.css.map */
