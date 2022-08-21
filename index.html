@@ -10,7 +10,7 @@
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css'>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="/app/img/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="/dist/style.css">
+        <link rel="stylesheet" href="/dist/style.css?v=2">
         <title>Anuraverse</title>
     </head>
     <body>
@@ -25,7 +25,7 @@
             </nav>
         </header>
         <section class="hero">
-            <img src="./img/welcome.png" alt="welcome">
+            <img src="/app/img/welcome.png" alt="welcome">
             <h1>Welcome to <br> Anuraverse!</h1>
             <p>A story-based NFT collectible about the <br> exciting and eventful universe of Anuraverse.</p>
         </section>
@@ -83,34 +83,34 @@
             <div class="row top">
               <div class="column">
                 <div class="box">
-                  <a href="#"><img src="./img/tribal1.png" alt="button"></a>
+                  <a href="#"><img src="/app/img/tribal.png" alt="button"></a>
                 </div>
               </div>
               <div class="column">
                 <div class="box">
-                  <a href="#"><img src="./img/Robo.png" alt="button"></a>
+                  <a href="#"><img src="/app/img/Robo.png" alt="button"></a>
                 </div>
               </div>
               <div class="column">
                 <div class="box">
-                  <a href="#"><img src="./img/Normal.png" alt="button"></a>
+                  <a href="#"><img src="app/img/Normal.png" alt="button"></a>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="column">
                 <div class="box">
-                  <a href="#"><img src="./img/undead.png" alt="button"></a>
+                  <a href="#"><img src="app/img/undead.png" alt="button"></a>
                 </div>
               </div>
               <div class="column">
                 <div class="box">
-                  <a href="#"><img src="./img/Giants.png" alt="button"></a>
+                  <a href="#"><img src="app/img/Giants.png" alt="button"></a>
                 </div>
               </div>
               <div class="column">
                 <div class="box">
-                  <a href="#"><img src="./img/Zen.png" alt="button"></a>
+                  <a href="#"><img src="app/img/Zen.png" alt="button"></a>
                 </div>
               </div>  
             </div>
@@ -120,7 +120,7 @@
             <div class="textlore">
                 <p>while the world was busy clashing, THEre was a wave of power felt by anurans around the Globe. lateR on, rEAlized That 
                     they weren't in the same body and clothes that they were moments ago. this caused mass FeaR amOnG the clans which forced 
-                    them into a stalemate. <br> &nbsp; <br> to this day, nobody knows what happened. <br> <span>Designs shown are from test run.                    </span>
+                    them into a stalemate. <br> &nbsp; <br> to this day, nobody knows what happened.
                 </p>
             <img src="/app/img/loregif.gif" alt="lore">
             </div>
@@ -200,5 +200,20 @@
         </footer>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js'></script>
         <script src="/app/js/script.js"></script>
+        <script type="text/javascript">
+          window.addEventListener("load", function(){
+              setTimeout(
+                  function open(event){
+                      document.querySelector(".popup").style.display = "block";
+                  },
+                  2000 
+              )
+          });
+          
+          
+          document.querySelector("#close").addEventListener("click", function(){
+              document.querySelector(".popup").style.display = "none";
+          });
+              </script>
     </body>
     </html>
